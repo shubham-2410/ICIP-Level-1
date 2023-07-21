@@ -1,0 +1,305 @@
+
+@media(max-width:1350px) {
+    .question {
+        font-size: 2rem;
+    }
+
+    .answer {
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width:1110px) {
+    .intro {
+        width: 65%;
+
+    }
+
+    .que_Area {
+        width: 70%;
+        height: 86%;
+    }
+
+    .scoreSheet{
+        width: 70vw;
+        height: 86vh;
+    }
+
+    .solution{
+        width: 70vw;
+    }
+}
+
+@media(max-width:960px) {
+    .intro {
+        width: 70%;
+    }
+
+    .intro h1{
+        font-size: 2.8rem;
+    }
+
+    .rule h4{
+        font-size: 2rem;
+    }
+
+    .rule ul li{
+        font-size: 1.5rem;
+    }
+
+    .que_Area {
+        width: 75%;
+    }
+
+    .scoreSheet{
+        width: 75vw;
+    }
+
+    .solution{
+        width: 75vw; 
+    }
+
+    .question {
+        font-size: 1.8rem;
+    }
+
+    .answer {
+        font-size: 1.5rem;
+    }
+
+    .finalQuestion p{
+        font-size: 1.7rem;
+    }
+
+    .opt{
+        font-size: 1.45rem;
+    }
+}
+
+
+
+@media(max-width:800px) {
+    .intro {
+        width: 80%;
+        height: 87%;
+    }
+
+    .intro h1 {
+        font-size: 2.3rem;
+    }
+
+    .intro h1{
+        font-size: 2.8rem;
+    }
+
+    .rule h4{
+        font-size: 1.8rem;
+    }
+
+    .rule ul li{
+        font-size: 1.3rem;
+    }
+
+    .que_Area {
+        width: 80%;
+        height: 87%;
+    }
+
+    .scoreSheet{
+        width: 80vw;
+        height: 87vh;
+    }
+
+    .finalQuestion p{
+        font-size: 1.6rem;
+    }
+
+    .opt{
+        font-size: 1.4rem;
+    }
+
+    .solution{
+        width: 80vw;
+    }
+
+    .question {
+        font-size: 1.5rem;
+    }
+
+    .answer {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:650px) {
+    .intro {
+        width: 85%;
+        height: 90%;
+    }
+
+
+    .intro h1{
+        font-size: 2.6rem;
+
+    }
+
+    .rule h4{
+        font-size: 1.7rem;
+    }
+
+    .rule ul li{
+        font-size: 1.4rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+    }
+
+    .que_Area {
+        width: 85%;
+        height: 90%;
+    }
+
+    .scoreSheet{
+        width: 85vw;
+        height: 90vh;
+        margin-top: 5vh;
+    }
+
+    .question {
+        font-size: 1.4rem;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+    }
+
+    .solution{
+        width: 85vw;
+    }
+
+    .finalQuestion p{
+        font-size: 1.5rem;
+    }
+
+    .opt{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:540px) {
+
+    .intro {
+        width: 90%;
+        height: 92%;
+    }
+
+    .intro h1 {
+        font-size: 2.3rem;
+    }
+
+    .que_Area {
+        width: 90%;
+        height: 92%;
+    }
+
+    .scoreSheet{
+        width: 90vw;
+        height: 92vh;
+        margin-top: 3vh;
+    }
+
+    .solution{
+        width: 90vw;
+    }
+
+    .finalQuestion p{
+        font-size: 1.4rem;
+    }
+
+    .opt{
+        font-size: 1.2rem;
+    }
+
+    #review{
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:450px) {
+    .intro {
+        width: 96%;
+        height: 97%;
+    }
+
+    .intro h1{
+        font-size: 2.2rem;
+    }
+
+    .rule h4{
+        font-size: 1.8rem;
+    }
+
+    .rule ul li{
+        font-size: 1.4rem;
+    }
+
+    .userName form div label,
+    .userName form div input {
+        font-size: 1.2rem;
+    }
+
+    .que_Area {
+        width: 93%;
+        height: 95%;
+    }
+
+    .scoreSheet{
+        height: 95vh;
+        width: 93vw;
+        margin-top: 1vh;
+    }
+
+    .solution{
+        width: 93vw; 
+    }
+
+    .final{
+        margin: 0px 10px;
+        border-radius: 0%;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width:390px){
+    .intro{
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+    }
+
+    .que_Area {
+        width: 100%;
+        height: 101%;
+        border-radius: 0%;
+    }
+
+    .scoreSheet{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0%;
+        margin-top: 0vh;
+    }
+
+    .solution{
+        width: 100vw;
+        border-radius: 1%;
+    }
+    .final{
+        margin:5px;
+    }
+}

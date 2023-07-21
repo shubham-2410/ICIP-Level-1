@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JS Quiz</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="intro">
+            <h1>Dynamic JavaScript Quiz</h1>
+
+            <div class="rule">
+                <h4>Guidelines</h4>
+                <ul>
+                    <li>Quiz is based on basics of JavaScript.</li>
+                    <li>Quiz consist of 5 MCQ questions.</li>
+                    <li>Single correct answer.</li>
+                    <li>Have Fun.</li>
+                </ul>
+            </div>
+
+            <div class="userName">
+                <form action="" id="loginForm">
+                    <div>
+                        <label for="name" class="user">Name:</label>
+                        <input type="text" name="myName" id="name" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="btnArea">
+                        <button type="submit" class="button start">Start</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="que_Area">
+            <h1 class="question">
+                <p class="queNo">1</p>
+                <p class="que">Question</p>
+            </h1>
+            <div class="options">
+                <div class="answer">
+                    <input type="radio" name="ans" id="ans1" class="ans">
+                    <label id="option1" for="ans1">option number 1</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="ans" id="ans2" class="ans">
+                    <label id="option2" for="ans2">option number 2</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="ans" id="ans3" class="ans">
+                    <label id="option3" for="ans3">option number 3</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="ans" id="ans4" class="ans">
+                    <label id="option4" for="ans4">option number 3</label>
+                </div>
+            </div>
+
+            <div class="btnArea">
+                <button class="button prev">&lt; Prev</button>
+                <button class="button next">Next &gt;</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="confetti-container">
+        <!-- Confetti elements will be dynamically added here -->
+    </div>
+    <div class="scoreSheet">
+        <h2>Quiz Result</h2>
+        <div class="percentage">
+            <div class="circular">
+                <span class="score ">
+                    score
+                </span>
+            </div>
+            <span class="score-text">Your score is 0 out of 5</span>
+        </div>
+        <div class="button-div">
+            <button class="button review">Review</button>
+            <button class="button again" onclick="location.reload()">Start Again</button>
+        </div>
+    </div>
+    <div class="solution">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

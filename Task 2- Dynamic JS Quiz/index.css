@@ -1,0 +1,309 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: rgb(166, 208, 245);
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro {
+    width: 60%;
+    height: 85%;
+    background-color: rgb(165, 104, 223);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.intro h1 {
+    padding: 10px;
+    font-size: 3.2rem;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+}
+
+.rule {
+    height: 50%;
+    padding: 10px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rule h4 {
+    font-size: 2.3rem;
+    padding: 3px 0px;
+    margin: 10px 0px;
+}
+
+.rule ul li {
+    font-size: 1.8rem;
+    margin: 5px 0px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#name {
+    height: 25px;
+    border-radius: 10px;
+}
+
+.userName form div label {
+    font-size: 1.7rem;
+}
+
+.userName form div input {
+    font-size: 1.7rem;
+    font-weight: 400;
+    background-color: rgb(188, 144, 229);
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+
+    color: black;
+    margin-left: 6px;
+}
+
+
+.userName form div {
+    padding: 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userName {
+    margin: 3px;
+}
+
+.button {
+    background-color: green;
+    padding: 5px 25px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(25, 158, 25);
+    color: black;
+}
+
+.que_Area {
+    width: 60%;
+    height: 85%;
+    background-color: rgb(165, 104, 223);
+    border-radius: 30px;
+
+    margin: 1px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+
+.question {
+    width: 80%;
+    margin-bottom: 3px;
+    display: flex;
+}
+
+.answer {
+    font-size: 1.8rem;
+    border-radius: 10px;
+    margin-top: 3px;
+    padding: 5px;
+}
+
+.answer:hover {
+    border: .5px solid rgb(11, 95, 11);
+}
+
+.answer label:hover {
+    padding-left: 2px;
+}
+
+.options {
+    width: 80%;
+}
+
+.btnArea {
+    padding-top: 2rem;
+}
+
+.prev {
+    border: none;
+}
+
+.scoreSheet {
+
+    border: 2px solid purple;
+    width: 60vw;
+    min-height: 85vh;
+    background-color: blueviolet;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px auto;
+    margin-top: 8vh;
+
+    display: none;
+
+}
+
+.scoreSheet>h2 {
+    font-size: 2.7rem;
+}
+
+.percentage {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.circular {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(rgb(200, 14, 206) 3.6deg, grey 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular::before {
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: blueviolet;
+    border-radius: 50%;
+}
+
+.score {
+    z-index: 5;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.score-text {
+    font-size: 1.5rem;
+    margin: 15px 0px;
+    font-weight: bolder;
+
+}
+
+.solution {
+
+    border: 2px solid green;
+    width: 60vw;
+    margin: 10px auto;
+    margin-bottom: 2vh;
+    background-color: rgb(225, 225, 76);
+    border-radius: 10px;
+    display: none;
+    padding-top: 8px;
+}
+
+.solution h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.final {
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background: white;
+    border: solid black;
+    padding: 2px;
+}
+
+.opt {
+    margin: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.finalQuestion p {
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+
+/* CSS Styles for Confetti Animation */
+
+/* Confetti container */
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+
+/* Confetti shapes */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 40%;
+    animation: confetti-fall 5s linear infinite;
+}
+
+/* Animation keyframes */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 10;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
