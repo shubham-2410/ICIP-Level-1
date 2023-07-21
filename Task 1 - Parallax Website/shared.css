@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.258);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 90px ;
+}
+nav>div {
+    padding-left: 20px;
+    width: 30%;
+}
+
+.mainmenu{
+    width:69% ;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 0px 10px;
+}
+
+nav .mainmenu li a:hover{
+    background: rgb(255,95,0);
+    border-radius: 25%;
+}
+
+nav .openmenu{
+    font-size: 2rem;
+    text-align: end;
+    padding: 25px 15px;
+    display: none;
+}
+
+.closemenu ,
+.contact {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.contact{
+    padding: 10px 5px ;
+}
+
+.fa-facebook:hover {
+    color: rgb(0,110,225);
+}
+.fa-linkedin:hover {
+    color: rgb(0,110,225);
+}
+.fa-instagram:hover {
+    color: rgb(255,0,191);
+}
+.fa-github:hover {
+    color: rgb(255 , 123 , 0);
+}
+
+.search li{
+    list-style: none;
+}
+
+.search li input{
+    padding: 10px;
+    border-radius: 25px;
+}
+
+@media (max-width :800px){
+    nav .mainmenu{
+        height: 100vh;
+        background: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 999;
+        transition: top .7s ease;
+        display: none;
+
+    }
+
+    nav>div{
+        width: 90%;
+    }
+
+    .search{
+        display: none;
+    }
+
+    
+    nav .closemenu{
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openmenu{
+        display: block;
+    }
+
+    nav .mainmenu li a:hover{
+        background: none;
+        color: rgb(255 , 123 , 0);
+        font-size: 1.6rem;
+    }
+}

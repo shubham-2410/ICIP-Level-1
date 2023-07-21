@@ -1,0 +1,118 @@
+html{
+    font-family: 'Balsamiq Sans', 'cursive';
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax{
+    position: absolute;
+    transition: 0.5s cubic-bezier(.2 , .49 , .32 , .99);
+    pointer-events: none;
+
+}
+
+.bg {
+    position: absolute;
+    /* width: 300%;
+    height: 300%; */
+    width: 194.44%;
+    height: 194.44%;
+    top: 25.31%;
+    left: 51.23%;
+    transform: translate(-50%, -50%);
+  }
+  
+.sun1{
+    width: 51.73%;
+    top: 55%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.mars2{
+    width: 5.90%;
+    top: 43%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.ven3{
+    width: 6.94%;
+    top: 75%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+}
+
+.earth4{
+    width: 5.90%;
+    top: 55%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.text{
+    color: white;
+    top: 35%;
+    left: 56%;
+    font-weight: 800;
+    font-size: 3rem;
+    z-index: 5;
+    text-transform: uppercase;
+    transform: translate(-50% , -50%);
+}
+
+.jup6{
+    width: 9.02%;
+    top: 56%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.sat7{
+    width: 11.80%;
+    top: 73%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+}
+
+.urns8{
+    width: 10.41%;
+    top: 53%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+
+.nep9{
+    width: 8.33%;
+    top: 62%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+/* responsive */
+
+@media (max-width : 1100px){
+    .text{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width : 725px) {
+    .text{
+        font-size: 1.5rem;
+    }
+}
